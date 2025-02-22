@@ -1,0 +1,29 @@
+:root{
+
+    --neutral-colors-400: #666666;
+    --neutral-colors-600: #0E0E0E;
+
+    --action-colors-defaul: #FFC629;
+}
+
+html, body {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    color: var(--neutral-colors-600);
+    font-size: 0.875rem;
+    font-family: "IBM Plex Sans", serif;
+    font-optical-sizing: auto;
+    overflow-x: hidden;
+}
+
+.main-content {
+    flex: 1;
+    padding-bottom: 2rem;
+}
+
+.container {
+    max-width: 1140px;
+}
