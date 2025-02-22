@@ -1,9 +1,80 @@
 ---
-import '@styles/styles.css'
-
 import Layout from '@layouts/Layout.astro';
 ---
 
 <Layout>
-    <h1>Login Main</h1>
+    <main class="main-login">
+        <div class="container h-100">
+            <section class="grid-login">
+                <div class="item item-logo">
+                    <img src="/assets/images/login_logo.svg">
+                </div>
+
+                <div class="item item-form">
+                    <div class="card">
+                        <div class="card-body">
+                            <h1 class="title-form">Sign In to Your Account</h1>
+
+                            <label>
+                                <span>Select Year</span>
+                                <select name="" class="form-select" required>
+                                    <option value=""></option>
+                                    <option value="2025" selected>2025</option>
+                                </select>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer-app"></footer>
 </Layout>
+
+<style>
+    .main-login{
+        flex: 1;
+        padding: 1rem;
+    }
+
+    .footer-app{
+        height: 56px;
+        background-color: var(--brand-colors-300);
+    }
+
+    .grid-login{
+        display: grid;
+        width: 100%;
+        grid-template-columns: minmax(0, 1fr) minmax(300px ,650px);
+        grid-template-rows: 1fr;
+        grid-template-areas: "logo form";
+        gap: 10px 10px;
+        justify-items: stretch;
+        align-items: center;
+        align-content: start;
+        height: 100%;
+    }
+
+    .grid-login .item {
+        width: 100%;
+        justify-self: stretch;
+    }
+    .grid-login .item-logo {
+        grid-area: logo;
+    }
+    .grid-login .item-form {
+        grid-form: form;
+    }
+
+
+    .card{
+        border: 0;
+        border-radius: 0.625rem;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    }
+
+    .title-form{
+        font-size: 1.5rem;
+    }
+</style>
