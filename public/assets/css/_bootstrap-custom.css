@@ -1,0 +1,21 @@
+b, strong {
+    font-weight: 600;
+}
+.fw-bold {
+    font-weight: 600 !important;
+}
+
+.card{
+    border: 0;
+    border-radius: 0.625rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}    
+
+.btn{
+    border-radius: 4px;
+}
+
+.form-control,
+.form-select{
+    color: var(--neutral-colors-400);
+}
